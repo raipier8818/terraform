@@ -14,7 +14,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "app_server" {
-  ami           = "ami-04dd23e62ed049936" # Ubuntu 24.04 LTS (x86_64)
+  ami           = "ami-040c33c6a51fd5d96" # Ubuntu 24.04 LTS (x86_64)
   instance_type = "t2.micro"
 
   tags = {
