@@ -28,11 +28,11 @@ terraform {
 }
 
 provider "aws" {
-  region = "us-west-2"
+  region = "ap-northeast-2"
 }
 
 resource "aws_instance" "app_server" {
-  ami           = "ami-830c94e3"
+  ami           = "ami-02c329a4b4aba6a48"
   instance_type = "t2.micro"
 
   tags = {
@@ -66,3 +66,10 @@ resource "aws_instance" "app_server" {
 $ terraform init
 $ terraform apply
 ```
+
+## Inspect State
+- Apply 후 생성된 리소스 확인 : `terraform.tfstate` 파일
+```zsh
+$ terraform show
+```
+
