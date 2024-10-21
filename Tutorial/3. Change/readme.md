@@ -43,7 +43,7 @@ $ terraform apply
 ## AMI 변경
 ```terraform
 resource "aws_instance" "app_server" {
-  ami           = "ami-0c55b159cbfafe1f0"
+  ami           = "ami-040c33c6a51fd5d96"
   instance_type = "t2.micro"
 
   tags = {
